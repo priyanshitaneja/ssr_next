@@ -53,3 +53,24 @@ class Index extends React.Component {
 };
 
 export default initStore.withRedux(Index);
+/* The code is creating a higher-order component (HOC) 
+using the withRedux() function from the next-redux-wrapper package.
+An HOC is a function that takes a component as an argument and 
+returns a new component with added functionality. 
+In this case, the added functionality is the ability to interact with the Redux store.
+
+The initStore module is a custom Redux store that contains 
+all of the application's reducers and middleware.
+A reducer is a function that determines how the application's state changes in 
+response to an action. Middleware is code that intercepts and modifies the application's actions and state.
+
+The HOC created by the code wraps the "Index" component, 
+which is the main component being rendered by the application. 
+By wrapping the "Index" component with the HOC, 
+the "Index" component gains access to the Redux store via props. 
+This allows the "Index" component to read and modify the application's state.
+
+Overall, the code is setting up the Redux store and 
+connecting it to the main component of the application,
+allowing the component to access and modify the application's state using Redux.
+*/
